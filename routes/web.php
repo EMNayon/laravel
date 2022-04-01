@@ -10,6 +10,7 @@ use App\Http\Controllers\DemoController;
 Route::get('/',[SiteController::class, 'Home']);
 Route::get('/about',[SiteController::class,'About']);
 Route::get('/contact',[SiteController::class,'Contact']);
+Route::get('/demo',[SiteController::class,'Demo']);
 
 Route::get('/name/{namevalue}',[DemoController::class,'myName']);
 Route::get('/fullname/{firstName}/{lastName}',[DemoController::class,'fullName']);
