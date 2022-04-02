@@ -7,6 +7,7 @@ use App\Http\Controllers\ResourcePhotoController;
 use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\CustomController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ForeachLoopBladeViewController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -56,6 +57,8 @@ Route::get('/yourself',[CustomController::class,'YourSelf']);
 
 // blade view
 Route::get('/homeview',[HomeController::class,'ShowHome']);
+
+Route::get('/foreach',[ForeachLoopBladeViewController::class,'DropDown']);
 
 // Route::get('/account/profile',[]);
 // Route::get('/account/login',[]);
