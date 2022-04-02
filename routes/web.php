@@ -41,7 +41,7 @@ Route::group(['prefix'=>'account'],function(){
     });
 });
 
-Route::get('/singleactioncontroller',[SingleActionController::class]);
+Route::get('/singleactioncontroller',[SingleActionController::class,'__invoke']);
 
 // Route::get('/account/profile',[]);
 // Route::get('/account/login',[]);
