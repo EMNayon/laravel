@@ -3,6 +3,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SiteController;
 use App\Http\Controllers\DemoController;
 use App\Http\Controllers\SingleActionController;
+use App\Http\Controllers\ResourcePhotoController;
+use App\Http\Controllers\PhotoController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -42,6 +44,10 @@ Route::group(['prefix'=>'account'],function(){
 });
 
 Route::get('/singleactioncontroller',[SingleActionController::class,'__invoke']);
+
+// Route::resource('photos',[PhotoController::class]);  when we are use the resource that time can't use third bracket. remember it
+Route::resource('photos', PhotoController::class);
+Route::resource('resource',ResourcePhotoController::class);
 
 // Route::get('/account/profile',[]);
 // Route::get('/account/login',[]);
