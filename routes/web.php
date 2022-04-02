@@ -5,6 +5,7 @@ use App\Http\Controllers\DemoController;
 use App\Http\Controllers\SingleActionController;
 use App\Http\Controllers\ResourcePhotoController;
 use App\Http\Controllers\PhotoController;
+use App\Http\Controllers\CustomController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -48,6 +49,9 @@ Route::get('/singleactioncontroller',[SingleActionController::class,'__invoke'])
 // Route::resource('photos',[PhotoController::class]);  when we are use the resource that time can't use third bracket. remember it
 Route::resource('photos', PhotoController::class);
 Route::resource('resource',ResourcePhotoController::class);
+
+Route::get('/myself',[CustomController::class,'MySelf']);
+Route::get('/yourself',[CustomController::class,'YourSelf']);
 
 // Route::get('/account/profile',[]);
 // Route::get('/account/login',[]);
