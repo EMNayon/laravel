@@ -8,6 +8,7 @@ use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\CustomController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ForeachLoopBladeViewController;
+use App\Http\Controllers\IfElseConditionController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -59,6 +60,7 @@ Route::get('/yourself',[CustomController::class,'YourSelf']);
 Route::get('/homeview',[HomeController::class,'ShowHome']);
 
 Route::get('/foreach',[ForeachLoopBladeViewController::class,'DropDown']);
+Route::get('/ifelse',[IfElseConditionController::class,'Show']);
 
 // Route::get('/account/profile',[]);
 // Route::get('/account/login',[]);
