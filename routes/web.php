@@ -2,6 +2,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SiteController;
 use App\Http\Controllers\DemoController;
+use App\Http\Controllers\SingleActionController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -40,6 +41,7 @@ Route::group(['prefix'=>'account'],function(){
     });
 });
 
+Route::get('/singleactioncontroller',[SingleActionController::class]);
 
 // Route::get('/account/profile',[]);
 // Route::get('/account/login',[]);
