@@ -6,6 +6,7 @@ use App\Http\Controllers\SingleActionController;
 use App\Http\Controllers\ResourcePhotoController;
 use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\CustomController;
+use App\Http\Controllers\HomeController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -52,6 +53,9 @@ Route::resource('resource',ResourcePhotoController::class);
 
 Route::get('/myself',[CustomController::class,'MySelf']);
 Route::get('/yourself',[CustomController::class,'YourSelf']);
+
+// blade view
+Route::get('/homeview',[HomeController::class,'ShowHome']);
 
 // Route::get('/account/profile',[]);
 // Route::get('/account/login',[]);
