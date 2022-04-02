@@ -8,8 +8,10 @@ class ForeachLoopBladeViewController extends Controller
 {
     function DropDown(){
         $Data = array('Bangladesh','India','Canada','America');
+        $Fruits = array('Banana','Mango','Jack-fruit','Goava');
         return view('ForeachLoopBladeViewController',[
-            'DataKey' => $Data
+            'DataKey' => $Data,
+            'FruitsKey' => $Fruits
         ]);
     }
 }
