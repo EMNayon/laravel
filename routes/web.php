@@ -12,6 +12,7 @@ use App\Http\Controllers\IfElseConditionController;
 use App\Http\Controllers\LoopPropertiesBladeViewController;
 use App\Http\Controllers\phpInsideBladeViewController;
 use App\Http\Controllers\IncludingSubviewBladeViewController;
+use App\Http\Controllers\MasterLayoutController;
 
 
 // Route::get('/', function () {
@@ -68,6 +69,7 @@ Route::get('/ifelse',[IfElseConditionController::class,'Show']);
 Route::get('/loop',[LoopPropertiesBladeViewController::class,'Show']);
 Route::get('/phpinside',[phpInsideBladeViewController::class,'Show']);
 Route::get('/subview',[IncludingSubviewBladeViewController::class,'Show']);
+Route::get('/layout',[MasterLayoutController::class,'Show']);
 
 // Route::get('/account/profile',[]);
 // Route::get('/account/login',[]);
