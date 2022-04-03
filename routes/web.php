@@ -9,6 +9,7 @@ use App\Http\Controllers\CustomController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ForeachLoopBladeViewController;
 use App\Http\Controllers\IfElseConditionController;
+use App\Http\Controllers\LoopPropertiesBladeViewController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -61,6 +62,7 @@ Route::get('/homeview',[HomeController::class,'ShowHome']);
 
 Route::get('/foreach',[ForeachLoopBladeViewController::class,'DropDown']);
 Route::get('/ifelse',[IfElseConditionController::class,'Show']);
+Route::get('/loop',[LoopPropertiesBladeViewController::class,'Show']);
 
 // Route::get('/account/profile',[]);
 // Route::get('/account/login',[]);
