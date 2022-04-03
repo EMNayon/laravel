@@ -1,4 +1,4 @@
-@include('subview.Menu')
+@include('subview.Menu',['DataKey'=> $DataKey])
 
 <br>
 <br><br><br><br><br><br><br><br><br>

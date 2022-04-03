@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 class IncludingSubviewBladeViewController extends Controller
 {
     function Show(){
-        return view('IncludingSubviewBladeView');
+        $Data = array('nayon','makin','mamun','pulak');
+        return view('IncludingSubviewBladeView',['DataKey'=>$Data]);
     }
 }
