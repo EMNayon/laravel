@@ -1,5 +1,7 @@
-@includefirst(['subview.Footer','subview.Menu'])
+<!-- @includefirst(['subview.Footer','subview.Menu']) -->
 
+@includeWhen(true,'subview.Menu')
+<!-- @includeUnless(false,'subview.Menu') -->
 <!-- <br>
 <br><br><br><br><br><br><br><br><br>
 <h1>This is my home page</h1>
